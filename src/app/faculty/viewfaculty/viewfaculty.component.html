@@ -1,0 +1,26 @@
+<table class="table table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th scope="col">Faculty_Id</th>
+                <th scope="col">Name</th>
+                <th scope="col">Dob</th>
+                <th scope="col">Subject</th>
+                <th scope="col">Email</th>
+                <th scope="col">Password</th>
+                <th scope="col">Address</th>
+                <th scope="col">PhoneNumber</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let items of faculty;">
+                <td>{{items.f_id}}</td>
+                <td>{{items.fname }} {{items.lname}}</td>
+                <td>{{items.dob}}</td>
+                <td>{{items.subject}}</td>
+                <td>{{items.email}}</td>
+                <td>{{items.password}}</td>
+                <td>{{items.address}}</td>
+                <td>{{items.phoneNumber}}</td>
+            </tr>
+        </tbody>
+    </table>

@@ -1,0 +1,72 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<form (ngSubmit)="addstudent()">
+  <label>
+    <p class="label-txt">Student_Id</p>
+    <input type="number" class="input" name="number" [(ngModel)]="student.s_id">
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+  </label>
+  <label>
+    <p class="label-txt">First Name</p>
+    <input type="text" class="input" name="fname" [(ngModel)]="student.fname">
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+  </label>
+  <label>
+    <p class="label-txt">Last Name</p>
+    <input type="text" class="input" name="lname" [(ngModel)]="student.lname">
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+  </label>
+  <label>
+    <p class="label-txt">Data Of Birth</p>
+    <input type="date" class="input" name="dob" [(ngModel)]="student.dob">
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+  </label>
+  <label>
+    <p class="label-txt">Branch</p>
+    <input type="text" class="input" name="branch" [(ngModel)]="student.branch">
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+  </label>
+  <label>
+    <p class="label-txt">Email</p>
+    <input type="email" class="input" name="email" [(ngModel)]="student.email">
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+  </label>
+  <label>
+    <p class="label-txt"> PASSWORD</p>
+    <input type="text" class="input" name="password" [(ngModel)]="student.password">
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+  </label>
+  <label>
+    <p class="label-txt">Address</p>
+    <input type="text" class="input" name="Address" [(ngModel)]="student.address">
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+  </label>
+  <label>
+    <p class="label-txt">Contact Number</p>
+    <input type="number" class="input" name="phoneNumber" [(ngModel)]="student.phoneNumber">
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+  </label>
+  <button type="submit">Add</button>
+  <button type="reset">clear-form</button>
+</form>
